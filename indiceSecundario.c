@@ -35,9 +35,10 @@ void inserirIndiceSecundario(const char *filename, char *sk, char *pk){
 
 	}else{
 		int pos = inserirListaInvertida(filename2, pk, -1); 
-		fprintf(fp,"%s %11d\n", sk, pos);
+		//fprintf(fp,"%s %11d\n", sk, pos);
+		fprintf(fp,"%-30s %10d\n", sk, pos);
+
 		//Ordenar
-		// qsort
 	}
 	
 	fclose(fp);

@@ -6,10 +6,10 @@
 #include"controler.h"
 
 int main(int argc, char *argv[]){
-	
+
 	int sair = 0;
 	char comando[30];
-	int debug = 1;
+	int debug = 0;
 
 	while(!sair){
 		if(debug) printf("> ");
@@ -22,8 +22,14 @@ int main(int argc, char *argv[]){
 		}else if(strcmp(comando,"remover") == 0){
 			char cpf[12];
 			scanf("%s",cpf);
-			//removerAtleta();
+			removerAtleta(cpf);
 		}else if(strcmp(comando,"buscar") == 0){
+			printf("buscar..\n");
+
+		}else if(strcmp(comando,"dump") == 0){
+			char filetodump[50];
+			scanf("%s", filetodump);
+			dumpToFile(filetodump);
 		}
 	}
 

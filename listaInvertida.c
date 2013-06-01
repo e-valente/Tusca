@@ -8,7 +8,8 @@ int inserirListaInvertida(char *filename, char *pk, int pos){
 	size = ftell(fp);
 	
 	//Num ordena nao!!!
-	fprintf(fp,"%s %d\n",pk,pos);
+	//fprintf(fp,"%s %d\n",pk,pos);
+	fprintf(fp,"%-11s %10d\n",pk,pos);
 
 	fclose(fp);
 	return size;

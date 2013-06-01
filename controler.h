@@ -9,5 +9,8 @@
 	#include "indiceSecundario.h"
 
 	void cadastrarAtleta();
+	void removerAtleta(char *cpf);
+	void removerAtleta(char *cpf);
+	void dumpToFile(char *filename);
 
 #endif
