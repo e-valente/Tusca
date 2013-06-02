@@ -11,5 +11,6 @@
 void dumpFileData();
 void dumpFilePrimaryKey();
 void dumpFileSecondaryKey(char *filename);
+void dumpFileInvertedListSecKey(char *filename);
 
 #endif /* DUMP_H_ */

@@ -80,3 +80,28 @@ void dumpFileSecondaryKey(char *filename)
 
 
 }
+
+void dumpFileInvertedListSecKey(char *filename)
+{
+	FILE *fp = fopen(filename, "r");
+
+	char pk[30];
+	int pos;
+
+
+	while(!feof(fp))
+	{
+		fscanf(fp, "%s %d", pk, &pos);
+		if(!feof(fp))
+		{
+			printf("%s - %d\n", pk, pos);
+
+		}
+
+	}
+
+	fclose(fp);
+
+
+
+}

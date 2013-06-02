@@ -74,4 +74,12 @@ void dumpToFile(char *filename)
 	}
 
 
+
+	if((strcmp(filename, "universidadeListaInvertida.idx") == 0) ||
+			(strcmp(filename, "modalidadeListaInvertida.idx") == 0))
+	{
+		dumpFileInvertedListSecKey(filename);
+	}
+
+
 }
