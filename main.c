@@ -24,7 +24,23 @@ int main(int argc, char *argv[]){
 			scanf("%s",cpf);
 			removerAtleta(cpf);
 		}else if(strcmp(comando,"buscar") == 0){
-			printf("buscar..\n");
+			char argbuscar[500], ch;
+			int count;
+
+			//obtem argumento de buscar
+			ch = getchar();
+			count = 0;
+			while(ch != '\n')
+			{
+				argbuscar[count] = ch;
+				count++;
+				ch = getchar();
+
+			}
+			argbuscar[count] = '\0';
+
+
+			buscar(argbuscar);
 
 		}else if(strcmp(comando,"dump") == 0){
 			char filetodump[50];

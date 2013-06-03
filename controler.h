@@ -12,5 +12,6 @@
 	void removerAtleta(char *cpf);
 	void removerAtleta(char *cpf);
 	void dumpToFile(char *filename);
+	void buscar(const char *args);
 
 #endif

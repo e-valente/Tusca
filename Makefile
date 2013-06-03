@@ -1,7 +1,7 @@
-all: clean bancoDeDados.o listaInvertida.o indiceSecundario.o indicePrimario.o controler.o main.o dump.o compile clean
+all: clean bancoDeDados.o listaInvertida.o indiceSecundario.o indicePrimario.o controler.o main.o dump.o busca.o remove.o compile clean
 
 compile:
-	@gcc bancoDeDados.o listaInvertida.o indiceSecundario.o indicePrimario.o controler.o dump.o main.o -o trab3 -g -lm
+	@gcc bancoDeDados.o listaInvertida.o indiceSecundario.o indicePrimario.o controler.o dump.o main.o busca.o remove.o -o trab3 -g -lm
 
 main.o:
 	@gcc -c main.c -g
@@ -20,6 +20,12 @@ listaInvertida.o:
 
 dump.o:
 	@gcc -c dump.c -g
+
+remove.o:
+	@gcc -c remove.c -g
+
+busca.o:
+	@gcc -c busca.c -g
 
 controler.o:
 	@gcc -c controler.c -g
